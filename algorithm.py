@@ -6,5 +6,9 @@ def linearSearch(myarray, target):
 
 
 fruits = [1, 2, 5, 7, 10]
-key = 5
-print("The index of your search is " +str(linearSearch(fruits, key)))
+key = 2
+index = linearSearch(fruits, key)
+if (index == -1):
+    print("Element is not found")
+else:
+    print("Your Search Index is "+str(index))
